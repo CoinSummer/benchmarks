@@ -3,7 +3,7 @@ const Footer = () => {
     <div>
       <footer>
         <a
-          href="https://github.com/filecoin-project/benchmarks"
+          href="https://github.com/CoinSummer/benchmarks"
           target="_blank"
         >
           Submit a pull request to add your benchmarks &rarr;
