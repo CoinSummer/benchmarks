@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: filecoin-benchmarks
-        image: __AWS_ECR_REGISTRY__/coinsummer/filecoin-benchmarks:__TAG__
+        image: __AWS_ECR_REGISTRY__/coinsummer/benchmarks:__TAG__
         ports:
         - containerPort: 80
       imagePullSecrets:
