@@ -23,7 +23,7 @@ export default function Home() {
           Hardware performance comparisons from the Filecoin community
         </p>
         <p className="subtitle">
-          v25 proofs, last updated {new Date().toLocaleDateString('en-us')}
+          v25 proofs, testnet/3 branch, last updated {new Date().toLocaleDateString('en-us')}
         </p>
 
         <p className="warning">
@@ -177,4 +177,3 @@ export default function Home() {
     </div>
   );
 }
-
