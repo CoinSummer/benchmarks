@@ -1,6 +1,6 @@
 # Hardware benchmarks on the Filecoin testnet
 
-This repo is a place to collect benchmarks collected from the Filecoin community. Submissions are reviewed manually, but we try to be quick. You can review the current benchmarks [here](https://filecoin-benchmarks.on.fleek.co/).
+This repo is a place to collect benchmarks collected from the Filecoin community. Submissions are reviewed manually, but we try to be quick. You can review the current benchmarks [here](https://filecoin-benchmarks.coinsummer.io/).
 
 ## Running a benchmark
 
