@@ -4,10 +4,11 @@ import Result from '../components/Result';
 import Footer from '../components/Footer';
 
 import v25 from '../data/v25.json';
+import v26 from '../data/v26.json';
 
 export default function Home() {
-  const [activeVersion, setActiveVersion] = useState('v25');
-  const [filterBy, setFilterBy] = useState('sealing');
+  const [activeVersion, setActiveVersion] = useState('v26');
+  const [filterBy, setFilterBy] = useState('sealing');  
 
   return (
     <div className="container">
@@ -23,12 +24,7 @@ export default function Home() {
           Hardware performance comparisons from the Filecoin community
         </p>
         <p className="subtitle">
-          v25 proofs, testnet/3 branch, last updated {new Date().toLocaleDateString('en-us')}
-        </p>
-
-        <p className="warning">
-          Filecoin is under active development and hardware combinations will
-          change after future upgrades.
+          v26 proofs, interopnet branch, last updated {new Date().toLocaleDateString('en-us')}
         </p>
 
         <p className="filters">
@@ -55,6 +51,22 @@ export default function Home() {
             WindowPoST
           </a>
         </p>
+
+        <div className="grid">
+          {v26
+            .filter((benchmark) => benchmark.stats.version === activeVersion)
+            .sort((a, b) => {
+              if (filterBy == 'sealing')
+                return a.stats.sealTimeMs - b.stats.sealTimeMs;
+              if (filterBy == 'winningPost')
+                return a.stats.winningPostTimeMs - b.stats.winningPostTimeMs;
+              if (filterBy == 'windowPost')
+                return a.stats.windowPostTimeMs - b.stats.windowPostTimeMs;
+            })
+            .map((benchmark) => (
+              <Result benchmark={benchmark} key={benchmark.index} />
+            ))}
+        </div>
 
         <div className="grid">
           {v25
@@ -86,7 +98,7 @@ export default function Home() {
         }
 
         main {
-          padding: 5rem 0;
+          padding: 2rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;

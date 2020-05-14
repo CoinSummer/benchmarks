@@ -1,0 +1,29 @@
+rawBench: |
+  results (v26) (34359738368)
+  seal: addPiece: 6m25.347326708s (85 MiB/s)
+  seal: preCommit phase 1: 4h20m1.815362902s (2.1 MiB/s)
+  seal: preCommit phase 2: 56m27.339985257s (9.67 MiB/s)
+  seal: commit phase 1: 1m2.882323706s (521 MiB/s)
+  seal: commit phase 2: 32m12.379400466s (17 MiB/s)
+  seal: verify: 193.812485ms
+  unseal: 4h14m0.099001761s  (2.15 MiB/s)
+  generate candidates: 668.619µs (46.7 TiB/s)
+  compute winnnig post proof (cold): 7.885069952s
+  compute winnnig post proof (hot): 3.856008295s
+  verify winnnig post proof (cold): 270.781774ms
+  verify winnnig post proof (hot): 198.851916ms
+  compute window post proof (cold): 16m57.694919502s
+  compute window post proof (hot): 16m20.993975498s
+  verify window post proof (cold): 5.349647816s
+  verify window post proof (hot): 214.237849ms
+cpu:
+  brand: AMD
+  model: Ryzen Threadripper 3970x
+  cores: 32
+  speed: 3.7GHz/4.5GHz
+gpu:
+  brand: NVidia
+  model: GTX 2080Ti
+ram:
+  amount: 256GB
+  speed: 2133mhz
