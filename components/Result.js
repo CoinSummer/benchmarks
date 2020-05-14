@@ -66,7 +66,7 @@ const Result = ({ benchmark }) => {
           flex-basis: 100%;
           display: flex;
           justify-content: flex-start;
-          margin-bottom: 1.5rem;
+          margin-bottom: 1rem;
         }
         div.hardware > span {
           flex-basis: 33.3%;

@@ -8,7 +8,7 @@ import v26 from '../data/v26.json';
 
 export default function Home() {
   const [activeVersion, setActiveVersion] = useState('v26');
-  const [filterBy, setFilterBy] = useState('sealing');  
+  const [filterBy, setFilterBy] = useState('sealing');
 
   return (
     <div className="container">
